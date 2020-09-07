@@ -1,0 +1,18 @@
+<%- include("partial/header.ejs") -%>
+
+
+<body>
+    <div class="forms__container">
+        <% userData.forEach((e)=>{ %>
+        <div class="jumbotron">
+            <!-- Name of the user -->
+            <h1 class="display-4"> <%= e.name%> </h1>
+            <!-- Body of the text of the user -->
+            <p class="lead"> <%= e.msg%></p>
+            <hr class="my-4">
+            <!-- Email address of the user -->
+            <p><%= e.mailID%></p>
+        </div>
+        <% }) %>
+    </div>
+</body>

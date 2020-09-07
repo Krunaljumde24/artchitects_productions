@@ -1,0 +1,15 @@
+<%- include("partial/header.ejs") -%>
+
+<body>
+    <div class="list__container container-fluid">
+        <ul class="list-group">
+            <% list.forEach((e)=>{ %>
+            <li class="list-group-item">
+                <%= e.mailID %>
+            </li>
+            <% }) %>
+        </ul>
+    </div>
+</body>
+
+</html>
